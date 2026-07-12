@@ -94,7 +94,7 @@ export default function FeaturedOffers() {
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 marginTop: '15px',
-                width: '25%',
+                width: 'max-content',
                 textAlign: 'center'
 
               }}

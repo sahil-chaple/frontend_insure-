@@ -15,9 +15,8 @@ export default function CallToActionBanner() {
       }}
     >
       {/* Decorative blobs */}
-      <br />
       <div
-        className=" absolute top-0 left-0 w-72 h-72 rounded-full blur-3xl opacity-15 pointer-events-none"
+        className="absolute top-0 left-0 w-72 h-72 rounded-full blur-3xl opacity-15 pointer-events-none"
         style={{ background: 'var(--brand-500)', transform: 'translate(-35%, -40%)' }}
       />
       <div
@@ -26,10 +25,8 @@ export default function CallToActionBanner() {
       />
 
       {/* Content */}
-      <div
-        className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-16 sm:py-20 w-full"
-
-      >        {/* Icon badge */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-8 py-12 sm:py-20 w-full">
+        {/* Icon badge */}
         <div
           className="w-14 h-14 flex items-center justify-center rounded-[16px] mb-6"
           style={{
@@ -39,25 +36,22 @@ export default function CallToActionBanner() {
         >
           <Shield size={24} color="#fff" />
         </div>
-        <br className="hidden sm:block" />
-        <h2 className="mt-8 text-[1.875rem] sm:text-[2.25rem] font-bold text-[var(--text-primary)] leading-tight tracking-tight mb-4">
-          Still confused about choosing
-          the right insurance?
-        </h2>
-        <br className="hidden sm:block" />
 
-        <p className="text-[0.9375rem] text-[var(--text-secondary)] leading-relaxed mb-10 max-w-[480px]">
+        <h2 className="text-[1.5rem] sm:text-[1.875rem] lg:text-[2.25rem] font-bold text-[var(--text-primary)] leading-tight tracking-tight mb-4">
+          Still confused about choosing the right insurance?
+        </h2>
+
+        <p className="text-[0.9375rem] text-[var(--text-secondary)] leading-relaxed mb-8 max-w-[480px]">
           Don't leave your future to chance. Our certified advisors will craft a personalised plan that matches your lifestyle and budget — completely free.
         </p>
-        <br className="hidden sm:block" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-lg sm:max-w-none">
           <button
             className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-[12px] font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 focus:outline-none text-[0.9375rem]"
             style={{
               background: 'linear-gradient(135deg, var(--brand-500), var(--accent-500))',
               boxShadow: '0 6px 20px rgba(31,110,242,0.4)',
-              minHeight: '48px', width: '270px'
+              minHeight: '48px',
             }}
           >
             <Search size={17} />
@@ -65,14 +59,12 @@ export default function CallToActionBanner() {
           </button>
           <button
             className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-[12px] font-semibold text-[var(--text-primary)] border border-[var(--border-mid)] hover:bg-[rgba(255,255,255,0.06)] transition-all duration-200 active:scale-95 focus:outline-none text-[0.9375rem]"
-            style={{ background: 'rgba(255,255,255,0.04)', minHeight: '48px', width: '350px' }}
+            style={{ background: 'rgba(255,255,255,0.04)', minHeight: '48px' }}
           >
             <Phone size={17} />
             Book Free Consultation
           </button>
         </div>
-        <br className='hidden sm:block' />
-        <br className='hidden sm:block' />
       </div>
     </motion.section>
   );

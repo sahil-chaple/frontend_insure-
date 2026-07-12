@@ -186,8 +186,6 @@ export default function PopularPlans() {
 
               <button className="rounded-full border border-[var(--border-mid)] px-4 py-2 text-sm font-medium text-[var(--text-secondary)] transition-all duration-200 hover:border-[var(--brand-500)] hover:bg-[#3b82f615] hover:text-[var(--brand-400)]"
                 style={{
-                  padding: '4px',
-                  width: '100px',
                   margin: 'auto'
                 }}
               >

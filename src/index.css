@@ -887,7 +887,7 @@ html.light .search-bar {
 .search-bar {
   flex: 1;
   max-width: 28rem;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.5rem;
   background: rgba(255, 255, 255, 0.06);
@@ -900,6 +900,12 @@ html.light .search-bar {
   transition: border-color 0.2s, background 0.2s;
   cursor: text;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    display: flex;
+  }
 }
 
 .search-bar:focus-within {

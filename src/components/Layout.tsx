@@ -220,7 +220,7 @@ export default function Layout({ children, activeTab = 'dashboard', onTabChange 
               onClick={() => { setUserOpen((v) => !v); setNotifOpen(false); }}
             >
               <div className="avatar-circle">{avatarLetter}</div>
-              <span style={{ fontSize: '0.8125rem', fontWeight: 600, display: 'none' }} className="sm:inline">
+              <span style={{ fontSize: '0.8125rem', fontWeight: 600 }} className="hidden sm:inline">
                 {displayName}
               </span>
               <ChevronDown size={14} style={{ color: 'var(--text-muted)' }} />
