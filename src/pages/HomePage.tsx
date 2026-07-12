@@ -3,10 +3,9 @@ import Layout from '../components/Layout';
 import ProfileCard from '../components/ProfileCard';
 import ProfileOnboardingForm from '../components/ProfileOnboardingForm';
 import { useAuthStore } from '../store/authStore';
-import type { Profile } from '../types';
 import {
   FileText, LifeBuoy, BarChart3, CreditCard, PlusCircle,
-  Download, RefreshCw, PhoneCall, Shield, Sparkles,
+  Download, RefreshCw, Shield, Sparkles,
   TrendingUp, TrendingDown, ChevronRight, Clock,
   FolderOpen, Settings, HelpCircle, MessageSquare,
 } from 'lucide-react';
